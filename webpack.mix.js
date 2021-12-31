@@ -43,5 +43,5 @@ mix
         postCss: [tailwindcss('./tailwind.config.js')],
     })
     .copy('./src/app.html', './docs/index.html')
-    .copyDirectory('./src/font','./docs/font')
-    .copyDirectory('./src/images','./docs/images');
+    .copyDirectory('./src/font','./docs/font');
+    // .copyDirectory('./src/images','./docs/images');

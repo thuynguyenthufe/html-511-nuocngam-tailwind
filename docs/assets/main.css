@@ -364,6 +364,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex {
   display: flex;
 }
+.h-2 {
+  height: 0.5rem;
+}
 .w-full {
   width: 100%;
 }
@@ -376,6 +379,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#053D9B\] {
   --tw-bg-opacity: 1;
   background-color: rgb(5 61 155 / var(--tw-bg-opacity));
+}
+.bg-blue-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
 }
 .py-1 {
   padding-top: 0.25rem;
@@ -422,5 +429,5 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-display: swap;
 }
 body {
-  background-color: red;
+  background-color: white;
 }

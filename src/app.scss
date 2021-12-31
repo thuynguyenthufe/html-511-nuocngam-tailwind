@@ -37,5 +37,16 @@
  | Website
  |--------------------------------------------------------------------------
 */
-
-
+@font-face {
+    font-family: "Myriad Pro Regular";
+    src: url("../font/MYRIADPRO-REGULAR.OTF") format("opentype");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Myriad Pro Bold";
+    src: url("../font/MYRIADPRO-BOLD.OTF") format("opentype");
+    font-display: swap;
+  }
+body{
+    background-color: red; 
+}

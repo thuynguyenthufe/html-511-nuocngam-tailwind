@@ -23,7 +23,7 @@ mix.webpackConfig({
         })
     ],
     devServer: {
-        port: '9090'
+        port: '5500'
     },
 });
 
@@ -39,6 +39,9 @@ mix
     .js('./src/app.js', './docs/assets/main.js')
     .sass('./src/app.scss', './docs/assets/main.css')
     .options({
+        processCssUrls: false,
         postCss: [tailwindcss('./tailwind.config.js')],
     })
-    .copy('./src/app.html', './docs/index.html');
+    .copy('./src/app.html', './docs/index.html')
+    .copyDirectory('./src/font','./docs/font')
+    .copyDirectory('./src/images','./docs/images');

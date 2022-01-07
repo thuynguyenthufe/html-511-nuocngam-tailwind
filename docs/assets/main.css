@@ -321,51 +321,108 @@ Ensure the default browser behavior of the `hidden` attribute.
 [hidden] {
   display: none;
 }
+*, ::before, ::after {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: var(--tw-empty,/*!*/ /*!*/);
+  --tw-brightness: var(--tw-empty,/*!*/ /*!*/);
+  --tw-contrast: var(--tw-empty,/*!*/ /*!*/);
+  --tw-grayscale: var(--tw-empty,/*!*/ /*!*/);
+  --tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
+  --tw-invert: var(--tw-empty,/*!*/ /*!*/);
+  --tw-saturate: var(--tw-empty,/*!*/ /*!*/);
+  --tw-sepia: var(--tw-empty,/*!*/ /*!*/);
+  --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
+  --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 /**
  * This injects Tailwind's component classes and any component classes
  * registered by plugins.
  */
 .container {
   width: 100%;
+  max-width: 1200px;
 }
-@media (min-width: 640px) {
+@media (max-width: 1119px) {
   .container {
-    max-width: 640px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
+    max-width: 1119px;
+    padding: 10px;
   }
 }
 /**
  * This injects Tailwind's utility classes and any utility classes registered
  * by plugins.
  */
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.bottom-\[8\%\] {
+  bottom: 8%;
+}
+.left-\[25\%\] {
+  left: 25%;
+}
+.bottom-0 {
+  bottom: 0px;
+}
+.left-0 {
+  left: 0px;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
+.mb-\[20px\] {
+  margin-bottom: 20px;
+}
+.mb-\[12px\] {
+  margin-bottom: 12px;
+}
+.mb-\[70px\] {
+  margin-bottom: 70px;
+}
+.mt-\[10px\] {
+  margin-top: 10px;
+}
+.mt-\[-60px\] {
+  margin-top: -60px;
+}
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+.block {
+  display: block;
+}
 .flex {
   display: flex;
 }
-.h-2 {
-  height: 0.5rem;
+.hidden {
+  display: none;
+}
+.h-auto {
+  height: auto;
+}
+.h-\[62px\] {
+  height: 62px;
+}
+.h-\[40px\] {
+  height: 40px;
+}
+.h-\[50px\] {
+  height: 50px;
 }
 .w-full {
   width: 100%;
@@ -373,8 +430,74 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-\[96px\] {
   width: 96px;
 }
+.w-\[260px\] {
+  width: 260px;
+}
+.w-\[49\%\] {
+  width: 49%;
+}
+.w-\[126px\] {
+  width: 126px;
+}
+.w-\[48\%\] {
+  width: 48%;
+}
+.w-\[40\%\] {
+  width: 40%;
+}
+.w-\[calc\(\(100\%-140px\)\/3\)\] {
+  width: calc((100% - 140px) / 3);
+}
+.w-\[70\%\] {
+  width: 70%;
+}
+.w-\[30\%\] {
+  width: 30%;
+}
+.w-\[350px\] {
+  width: 350px;
+}
+.w-\[calc\(\(100\%-40px\)\/3\)\] {
+  width: calc((100% - 40px) / 3);
+}
+.w-\[50\%\] {
+  width: 50%;
+}
+.max-w-\[100\%\] {
+  max-width: 100%;
+}
+.max-w-\[78px\] {
+  max-width: 78px;
+}
+.flex-1 {
+  flex: 1 1 0%;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .items-center {
   align-items: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.rounded-\[5px\] {
+  border-radius: 5px;
+}
+.rounded-\[76px_76px_0_0\] {
+  border-radius: 76px 76px 0 0;
 }
 .bg-\[\#053D9B\] {
   --tw-bg-opacity: 1;
@@ -384,9 +507,90 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
 }
+.bg-\[\#EF1E18\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 30 24 / var(--tw-bg-opacity));
+}
+.bg-\[\#EFF7FF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 247 255 / var(--tw-bg-opacity));
+}
+.bg-\[\#011778\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 23 120 / var(--tw-bg-opacity));
+}
+.bg-\[\#E1F6FF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(225 246 255 / var(--tw-bg-opacity));
+}
+.bg-\[\#00B9FF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 185 255 / var(--tw-bg-opacity));
+}
+.bg-\[\#0083E8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 131 232 / var(--tw-bg-opacity));
+}
+.bg-\[\#003797\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 55 151 / var(--tw-bg-opacity));
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-\[\#EF413D\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 65 61 / var(--tw-bg-opacity));
+}
+.bg-\[url\(\'\.\.\/images\/bg-info-2\.jpg\'\)\] {
+  background-image: url('../images/bg-info-2.jpg');
+}
+.bg-\[url\(\'\.\.\/images\/bg-comment\.jpg\'\)\] {
+  background-image: url('../images/bg-comment.jpg');
+}
+.bg-\[url\(\'\.\.\/images\/bg-order\.jpg\'\)\] {
+  background-image: url('../images/bg-order.jpg');
+}
+.p-\[20px\] {
+  padding: 20px;
+}
+.p-\[10px_20px\] {
+  padding: 10px 20px;
+}
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+.py-\[30px\] {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.px-\[20px\] {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.px-\[50px\] {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.pb-\[45px\] {
+  padding-bottom: 45px;
+}
+.text-center {
+  text-align: center;
 }
 .font-MyriadPro {
   font-family: Myriad Pro, sans-serif;
@@ -394,12 +598,67 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-MyriadProBold {
   font-family: Myriad Pro Bold, serif;
 }
+.font-MyriadProSemiBold {
+  font-family: Myriad Pro SemiBold, serif;
+}
+.text-\[24px\] {
+  font-size: 24px;
+}
 .text-\[55px\] {
   font-size: 55px;
+}
+.text-\[38px\] {
+  font-size: 38px;
+}
+.text-\[48px\] {
+  font-size: 48px;
+}
+.text-\[28px\] {
+  font-size: 28px;
+}
+.text-\[33px\] {
+  font-size: 33px;
+}
+.text-\[30px\] {
+  font-size: 30px;
+}
+.text-\[27px\] {
+  font-size: 27px;
+}
+.text-\[37px\] {
+  font-size: 37px;
+}
+.leading-tight {
+  line-height: 1.25;
 }
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-\[\#053D9B\] {
+  --tw-text-opacity: 1;
+  color: rgb(5 61 155 / var(--tw-text-opacity));
+}
+.text-\[\#2E3190\] {
+  --tw-text-opacity: 1;
+  color: rgb(46 49 144 / var(--tw-text-opacity));
+}
+.text-\[\#0443AB\] {
+  --tw-text-opacity: 1;
+  color: rgb(4 67 171 / var(--tw-text-opacity));
+}
+.text-\[\#050B5A\] {
+  --tw-text-opacity: 1;
+  color: rgb(5 11 90 / var(--tw-text-opacity));
+}
+.shadow-\[4px_4px_0_0_\#003797\] {
+  --tw-shadow: 4px 4px 0 0 #003797;
+  --tw-shadow-colored: 4px 4px 0 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.drop-shadow-md {
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  filter: var(--tw-filter);
 }
 /**
  * Use this directive to control where Tailwind injects the hover, focus,
@@ -408,9 +667,264 @@ Ensure the default browser behavior of the `hidden` attribute.
  * If omitted, Tailwind will append these classes to the very end of
  * your stylesheet by default.
  */
-@media (min-width: 768px) {
-  .md\:w-\[1200px\] {
-    width: 1200px;
+.placeholder\:text-\[\#053D9B\]::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(5 61 155 / var(--tw-text-opacity));
+}
+.placeholder\:text-\[\#053D9B\]:-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(5 61 155 / var(--tw-text-opacity));
+}
+.placeholder\:text-\[\#053D9B\]::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(5 61 155 / var(--tw-text-opacity));
+}
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+.before\:right-\[-50px\]::before {
+  content: var(--tw-content);
+  right: -50px;
+}
+.before\:top-\[50\%\]::before {
+  content: var(--tw-content);
+  top: 50%;
+}
+.before\:bottom-\[50px\]::before {
+  content: var(--tw-content);
+  bottom: 50px;
+}
+.before\:right-\[50\%\]::before {
+  content: var(--tw-content);
+  right: 50%;
+}
+.before\:top-\[5px\]::before {
+  content: var(--tw-content);
+  top: 5px;
+}
+.before\:left-\[10px\]::before {
+  content: var(--tw-content);
+  left: 10px;
+}
+.before\:mt-\[-31px\]::before {
+  content: var(--tw-content);
+  margin-top: -31px;
+}
+.before\:mr-\[-140px\]::before {
+  content: var(--tw-content);
+  margin-right: -140px;
+}
+.before\:block::before {
+  content: var(--tw-content);
+  display: block;
+}
+.before\:h-\[63px\]::before {
+  content: var(--tw-content);
+  height: 63px;
+}
+.before\:h-\[57px\]::before {
+  content: var(--tw-content);
+  height: 57px;
+}
+.before\:h-\[41px\]::before {
+  content: var(--tw-content);
+  height: 41px;
+}
+.before\:w-\[29px\]::before {
+  content: var(--tw-content);
+  width: 29px;
+}
+.before\:w-\[127px\]::before {
+  content: var(--tw-content);
+  width: 127px;
+}
+.before\:w-\[47px\]::before {
+  content: var(--tw-content);
+  width: 47px;
+}
+.before\:bg-\[url\(\'\.\.\/images\/icon-level\.png\'\)\]::before {
+  content: var(--tw-content);
+  background-image: url('../images/icon-level.png');
+}
+.before\:bg-\[url\(\'\.\.\/images\/text-freeship2\.png\'\)\]::before {
+  content: var(--tw-content);
+  background-image: url('../images/text-freeship2.png');
+}
+.before\:bg-\[url\(\'\.\.\/images\/quotation-mark-02\.png\'\)\]::before {
+  content: var(--tw-content);
+  background-image: url('../images/quotation-mark-02.png');
+}
+.before\:bg-contain::before {
+  content: var(--tw-content);
+  background-size: contain;
+}
+.before\:bg-cover::before {
+  content: var(--tw-content);
+  background-size: cover;
+}
+.before\:content-\[\'\'\]::before {
+  --tw-content: '';
+  content: var(--tw-content);
+}
+@media (max-width: 1119px) {
+  .xl\:text-\[32px\] {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1023px) {
+  .lg\:left-\[50\%\] {
+    left: 50%;
+  }
+  .lg\:ml-\[-130px\] {
+    margin-left: -130px;
+  }
+}
+@media (max-width: 767px) {
+  .md\:bottom-\[5\%\] {
+    bottom: 5%;
+  }
+  .md\:float-left {
+    float: left;
+  }
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .md\:mx-\[25px\] {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .md\:mx-\[-10px\] {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .md\:ml-\[-71px\] {
+    margin-left: -71px;
+  }
+  .md\:mb-\[35px\] {
+    margin-bottom: 35px;
+  }
+  .md\:mb-\[30px\] {
+    margin-bottom: 30px;
+  }
+  .md\:mb-\[20px\] {
+    margin-bottom: 20px;
+  }
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+  .md\:mr-2 {
+    margin-right: 0.5rem;
+  }
+  .md\:h-\[34px\] {
+    height: 34px;
+  }
+  .md\:h-\[30px\] {
+    height: 30px;
+  }
+  .md\:h-\[40px\] {
+    height: 40px;
+  }
+  .md\:w-\[56px\] {
+    width: 56px;
+  }
+  .md\:w-\[142px\] {
+    width: 142px;
+  }
+  .md\:w-\[100\%\] {
+    width: 100%;
+  }
+  .md\:w-full {
+    width: 100%;
+  }
+  .md\:w-auto {
+    width: auto;
+  }
+  .md\:w-\[40px\] {
+    width: 40px;
+  }
+  .md\:max-w-\[80\%\] {
+    max-width: 80%;
+  }
+  .md\:flex-col {
+    flex-direction: column;
+  }
+  .md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+  .md\:rounded-\[0px\] {
+    border-radius: 0px;
+  }
+  .md\:py-\[10px\] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .md\:px-\[10px\] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .md\:text-\[16px\] {
+    font-size: 16px;
+  }
+  .md\:text-\[18px\] {
+    font-size: 18px;
+  }
+  .md\:text-\[21px\] {
+    font-size: 21px;
+  }
+  .md\:text-\[20px\] {
+    font-size: 20px;
+  }
+  .md\:before\:right-\[50\%\]::before {
+    content: var(--tw-content);
+    right: 50%;
+  }
+  .md\:before\:top-auto::before {
+    content: var(--tw-content);
+    top: auto;
+  }
+  .md\:before\:bottom-\[-32px\]::before {
+    content: var(--tw-content);
+    bottom: -32px;
+  }
+  .md\:before\:mr-\[-7px\]::before {
+    content: var(--tw-content);
+    margin-right: -7px;
+  }
+  .md\:before\:mr-\[-60px\]::before {
+    content: var(--tw-content);
+    margin-right: -60px;
+  }
+  .md\:before\:hidden::before {
+    content: var(--tw-content);
+    display: none;
+  }
+  .md\:before\:h-\[32px\]::before {
+    content: var(--tw-content);
+    height: 32px;
+  }
+  .md\:before\:h-\[25px\]::before {
+    content: var(--tw-content);
+    height: 25px;
+  }
+  .md\:before\:w-\[15px\]::before {
+    content: var(--tw-content);
+    width: 15px;
+  }
+  .md\:before\:max-w-\[57px\]::before {
+    content: var(--tw-content);
+    max-width: 57px;
+  }
+  .md\:before\:rotate-90::before {
+    content: var(--tw-content);
+    --tw-rotate: 90deg;
+    transform: var(--tw-transform);
+  }
+}
+@media (max-width: 639px) {
+  .sm\:block {
+    display: block;
   }
 }
 /*
@@ -428,6 +942,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   src: url("../font/MYRIADPRO-BOLD.OTF") format("opentype");
   font-display: swap;
 }
-body {
-  background-color: white;
+@font-face {
+  font-family: "Myriad Pro SemiBold";
+  src: url("../font/MYRIADPRO-SEMIBOLD.OTF") format("opentype");
+  font-display: swap;
 }

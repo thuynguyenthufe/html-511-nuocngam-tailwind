@@ -47,6 +47,8 @@
     src: url("../font/MYRIADPRO-BOLD.OTF") format("opentype");
     font-display: swap;
   }
-body{
-    background-color: white; 
-}
+  @font-face {
+    font-family: "Myriad Pro SemiBold";
+    src: url("../font/MYRIADPRO-SEMIBOLD.OTF") format("opentype");
+    font-display: swap;
+  }

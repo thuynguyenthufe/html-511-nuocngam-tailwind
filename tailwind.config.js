@@ -22,6 +22,9 @@ module.exports = {
         padding: {
           xl: "1rem"
         }
+      },
+      backgroundPosition: {
+        center: 'center top',
       }
     },
     plugins: [

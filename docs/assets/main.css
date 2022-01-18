@@ -383,6 +383,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .left-0 {
   left: 0px;
 }
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -390,6 +396,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 .mb-\[20px\] {
   margin-bottom: 20px;
@@ -412,11 +422,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-3 {
   margin-top: 0.75rem;
 }
+.mb-\[30px\] {
+  margin-bottom: 30px;
+}
+.mb-\[10px\] {
+  margin-bottom: 10px;
+}
 .block {
   display: block;
 }
+.inline-block {
+  display: inline-block;
+}
 .flex {
   display: flex;
+}
+.grid {
+  display: grid;
 }
 .hidden {
   display: none;
@@ -490,6 +512,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .cursor-pointer {
   cursor: pointer;
 }
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .flex-col {
   flex-direction: column;
 }
@@ -514,6 +542,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-around {
   justify-content: space-around;
 }
+.gap-\[10px\] {
+  gap: 10px;
+}
+.gap-x-\[20px\] {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
 .rounded-\[5px\] {
   border-radius: 5px;
 }
@@ -533,6 +568,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-\[\#0443ab\] {
   --tw-border-opacity: 1;
   border-color: rgb(4 67 171 / var(--tw-border-opacity));
+}
+.border-\[\#2E3191\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(46 49 145 / var(--tw-border-opacity));
 }
 .bg-\[\#053D9B\] {
   --tw-bg-opacity: 1;
@@ -591,6 +630,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[url\(\'\.\.\/images\/bg-order\.jpg\'\)\] {
   background-image: url('../images/bg-order.jpg');
 }
+.bg-\[url\(\'\.\.\/images\/bg-footer\.jpg\'\)\] {
+  background-image: url('../images/bg-footer.jpg');
+}
 .bg-\[50\%_0\] {
   background-position: 50% 0;
 }
@@ -638,11 +680,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 70px;
   padding-bottom: 70px;
 }
+.py-\[50px\] {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .pb-\[45px\] {
   padding-bottom: 45px;
 }
 .pb-\[50px\] {
   padding-bottom: 50px;
+}
+.text-left {
+  text-align: left;
 }
 .text-center {
   text-align: center;
@@ -692,6 +741,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[49px\] {
   font-size: 49px;
 }
+.text-\[15px\] {
+  font-size: 15px;
+}
+.text-\[21px\] {
+  font-size: 21px;
+}
+.text-\[19px\] {
+  font-size: 19px;
+}
 .leading-tight {
   line-height: 1.25;
 }
@@ -717,6 +775,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#050B5A\] {
   --tw-text-opacity: 1;
   color: rgb(5 11 90 / var(--tw-text-opacity));
+}
+.text-\[\#2E3191\] {
+  --tw-text-opacity: 1;
+  color: rgb(46 49 145 / var(--tw-text-opacity));
 }
 .shadow-\[4px_4px_0_0_\#003797\] {
   --tw-shadow: 4px 4px 0 0 #003797;
@@ -833,6 +895,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .before\:content-\[\'\'\]::before {
   --tw-content: '';
   content: var(--tw-content);
+}
+.hover\:text-\[red\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity));
 }
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
@@ -964,9 +1030,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
   .md\:pt-\[300px\] {
     padding-top: 300px;
-  }
-  .md\:pb-0 {
-    padding-bottom: 0px;
   }
   .md\:pb-\[20px\] {
     padding-bottom: 20px;

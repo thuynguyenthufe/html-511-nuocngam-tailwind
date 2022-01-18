@@ -14,17 +14,20 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
  */
 
 
-mix.webpackConfig({
+ mix.webpackConfig({
     plugins: [
         new BrowserSyncPlugin({
             files: [
                 'src/**/*',
-            ]
+            ],
+            host: 'localhost',
+            port: 3000,
+            server: {
+                baseDir: "docs/",
+                index: "index.html"
+            }
         })
     ],
-    devServer: {
-        port: '5500'
-    },
 });
 
 
